@@ -1,40 +1,48 @@
 import React from 'react';
-import {NavLink} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import planet from '../images/planet.png';
 
 const Header = () => (
   <header className="header">
-    <div className="Navbar">
+    <div className="navbar">
       <nav>
         <ul className="flex">
-        <div className='leftNav'>
-        <li>
-          <img className='logo' src={planet}></img>
-        </li>
-        <li>
-          <h1>Space Travelers' Hub</h1>
-        </li>
-        </div>
-        <div className='rightNav'>
-          <li>
-            <NavLink className="Rockets" to="/"  style={({isActive}) => {
-              return {textDecoration:isActive? 'underline':''}
-  }}
-
-   >Rockets</NavLink>
-          </li>
-          <li>
-            <NavLink className="Missions" to="/missions"style={({isActive}) => {
-              return {textDecoration:isActive? 'underline':''}
-  }}
-  >Missions</NavLink>
-          </li>
-          <li>
-            <NavLink className="categories" to="/myProfile" style={({isActive}) => {
-              return {textDecoration:isActive? 'underline':''}
-  }}
-  >My Profile</NavLink>
-          </li>
+          <div className="left-nav">
+            <li>
+              <img alt="logo" className="logo" src={planet} />
+            </li>
+            <li>
+              <h1>Space Travelers&apos; Hub</h1>
+            </li>
+          </div>
+          <div className="right-nav">
+            <li>
+              <NavLink
+                className="rockets"
+                to="/"
+                style={({ isActive }) => ({ textDecoration: isActive ? 'underline' : '' })}
+              >
+                Rockets
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="missions"
+                to="/missions"
+                style={({ isActive }) => ({ textDecoration: isActive ? 'underline' : '' })}
+              >
+                Missions
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                className="categories"
+                to="/myProfile"
+                style={({ isActive }) => ({ textDecoration: isActive ? 'underline' : '' })}
+              >
+                My Profile
+              </NavLink>
+            </li>
           </div>
         </ul>
       </nav>
@@ -43,4 +51,3 @@ const Header = () => (
 );
 
 export default Header;
-

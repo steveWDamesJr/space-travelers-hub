@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Missions(props) {
+function Missions() {
   return (
     <div>
       missions under construction

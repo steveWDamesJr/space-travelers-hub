@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Rockets(props) {
+function Rockets() {
   return (
     <div>
       Under construction

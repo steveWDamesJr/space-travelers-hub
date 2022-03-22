@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MyProfile(props) {
+function MyProfile() {
   return (
     <div>
       profile under construction
