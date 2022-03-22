@@ -5,14 +5,17 @@ import planet from '../images/planet.png';
 const Header = () => (
   <header className="header">
     <div className="Navbar">
-      <nav className="flex">
-        <ul>
+      <nav>
+        <ul className="flex">
+        <div className='leftNav'>
         <li>
           <img className='logo' src={planet}></img>
         </li>
         <li>
           <h1>Space Travelers' Hub</h1>
         </li>
+        </div>
+        <div className='rightNav'>
           <li>
             <NavLink className="Rockets" to="/"  style={({isActive}) => {
               return {textDecoration:isActive? 'underline':''}
@@ -32,6 +35,7 @@ const Header = () => (
   }}
   >My Profile</NavLink>
           </li>
+          </div>
         </ul>
       </nav>
     </div>
