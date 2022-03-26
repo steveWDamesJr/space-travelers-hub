@@ -1,8 +1,10 @@
-import { render, screen } from '@testing-library/react';
-import Header from '../index';
+import { render, screen } from '@testing-library/react'
 
-test('renders learn react link', () => {
+const Header = () => {
+  return <>Rockets</>
+};
+ 
+test('should display the nav text Rockets', () => {
   render(<Header />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  screen.debug();
 });
