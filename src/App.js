@@ -6,7 +6,7 @@ import Header from './components/Header';
 import Rockets from './components/Rockets';
 import MyProfile from './components/MyProfile';
 import Missions from './components/Missions';
-import './index.css';
+import './CSS/index.css';
 
 function App() {
   const dispatch = useDispatch();
@@ -29,5 +29,4 @@ function App() {
     </main>
   );
 }
-
 export default App;
