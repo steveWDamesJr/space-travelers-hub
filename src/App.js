@@ -10,7 +10,7 @@ import './index.css';
 
 function App() {
   const dispatch = useDispatch();
-  const { rocketsReducer: store } = useSelector((state) => state);
+  const { rocketsReducer } = useSelector((state) => state);
 
   useEffect(() => {
     rocketsFromAPI(dispatch, getRockets);
@@ -21,9 +21,20 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Rockets store={store} />} />
-          <Route path="/missions" element={<Missions store={store} />} />
-          <Route path="/myProfile" element={<MyProfile store={store} />} />
+          <Route
+            path="/"
+            exact
+            element={<Rockets store={rocketsReducer} />}
+          />
+          <Route
+            path="/mission"
+            exact
+            element={<Missions />}
+          />
+          <Route
+            path="/myProfile"
+            element={<MyProfile rockets={rocketsReducer} />}
+          />
         </Routes>
       </BrowserRouter>
     </main>

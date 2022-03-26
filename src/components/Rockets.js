@@ -8,7 +8,6 @@ const Rockets = ({ store }) => (
       {store.map((rocket) => (
         <Rocket key={rocket.id} rocket={rocket} />
       ))}
-      <li><p>Under Construction</p></li>
     </ul>
   </section>
 );
