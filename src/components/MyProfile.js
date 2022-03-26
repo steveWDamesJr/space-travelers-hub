@@ -3,7 +3,6 @@ import Proptypes from 'prop-types';
 
 const MyProfile = ({ rockets, missions }) => {
   const reservedItems = (store) => store.filter((element) => element.reserved === true);
-
   return (
     <section className="myprofile-container">
       <div className="missions-myprofile-div">
