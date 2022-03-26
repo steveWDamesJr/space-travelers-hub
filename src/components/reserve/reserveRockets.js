@@ -20,7 +20,7 @@ const Rocket = (props) => {
       </div>
       <div className="rocket-info">
         <h2 className="rocket-title">{rocket.rocket_name}</h2>
-        <p>
+        <p className="rocket-p">
           {rocket.reserved ? (
             <span className="rocket-reserved-badge">Reserved</span>
           ) : null}
@@ -33,7 +33,7 @@ const Rocket = (props) => {
           }
           type="button"
         >
-          {rocket.reserved ? 'rocket-reservation-canceled' : 'reserve-rocket'}
+          {rocket.reserved ? 'Rocket Reservation Canceled' : 'Reserve Rocket'}
         </button>
       </div>
     </li>

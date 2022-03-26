@@ -3,10 +3,12 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
 .body {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .flex {
@@ -52,7 +54,7 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: rgb(229, 226, 226);
+  background-color: rgb(229 226 226);
 }
 
 .mission {
@@ -140,4 +142,130 @@ th {
 
 .rockets-myprofile-list-ul {
   height: 50px;
+}
+
+.rockets-container {
+  padding: 1.875rem  4.375rem;
+}
+
+.rocket-ul-flex {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.875rem;
+}
+
+.reserved-rocket-li {
+  display: flex;
+  height: 100%;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.img-for-rocket-div {
+  height: 11.25rem;
+  width: 12.5rem;
+}
+
+.img-for-rocket {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.rocket-info {
+  height: 100%;
+  width: 90%;
+  padding: 0 0.313rem;
+}
+
+.rocket-title {
+  font-weight: 700;
+  font-size: 1.19rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.rocket-reserved-badge {
+  margin-right: 0.5rem;
+  color: #fff;
+  background-color: #17a2b8;
+  display: inline-block;
+  padding: 0.25em 0.4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.rocket-p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+button {
+  height: 2.8rem;
+  width: 8rem;
+  border-radius: 0.25rem;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.button-reserved:focus,
+.button-reserved.focus {
+  box-shadow: 0 0 0 0.2rem #268fff;
+  opacity: 1;
+  height: 3rem;
+  width: 10rem;
+}
+
+.button-reserved:hover,
+.button-reserved.focus {
+  background-color: #e2e4dd;
+  color: #212529;
+  border-color: #0062cc;
+  text-decoration: none;
+  border: 1px solid #dee2e6;
+  height: 3rem;
+  width: 10rem;
+}
+
+.button-reserved:focus:not(:focus-visible) {
+  outline: 0;
+  height: 3rem;
+  width: 10rem;
+  background-color: white;
+  color: grey;
+}
+
+.button-reserved:not(:disabled):not(.disabled) {
+  cursor: pointer;
+  height: 3rem;
+  width: 10rem;
+}
+
+.button-not-reserved:focus,
+.button-not-reserved.focus {
+  box-shadow: 0 0 0 0.2rem #268fff;
+  opacity: 1;
+}
+
+.button-not-reserved:hover,
+.button-not-reserved.focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+.button-not-reserved:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.button-not-reserved:not(:disabled):not(.disabled) {
+  cursor: pointer;
 }
