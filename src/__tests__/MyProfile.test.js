@@ -1,9 +1,7 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react';
 
-const Missions = () => {
-  return <>Missions</>
-};
- 
+const Missions = () => <>Missions</>;
+
 test('should display the nav text Missions', () => {
   render(<Missions />);
   screen.debug();

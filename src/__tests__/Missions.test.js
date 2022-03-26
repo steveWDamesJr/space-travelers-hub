@@ -1,9 +1,7 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react';
 
-const Description = () => {
-  return <>Description</>
-};
- 
+const Description = () => <>Description</>;
+
 test('should display the nav text Description', () => {
   render(<Description />);
   screen.debug();
